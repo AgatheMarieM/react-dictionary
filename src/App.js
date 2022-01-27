@@ -10,7 +10,7 @@ export default function App() {
       <main>
         <Dictionary />
       </main>
-      <footer>
+      <footer className="text-center">
         <a href="/">Open-source </a>
       code by Agathe M.
       </footer>
