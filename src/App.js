@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">   
+    <div className="App"> 
+    <header>Dictionary</header>  
     </div>
-  );
+  )
 }
 
-export default App;
