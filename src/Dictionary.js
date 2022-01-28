@@ -22,12 +22,18 @@ export default function Dictionary() {
         axios.get(apiUrl).then(handleResponse);
     }
     return (
-        <div className="Dictionary">
+        <div className="Dictionary">                                             
             <form onSubmit={search}>
-                <input type="search" autoFocus={true} placeholder="type a word" onChange={updateQuery}/>
-                <input type="submit" value="go"/>
+                <div className="row">
+                    <div className="col-9">
+                    <input type="search" autoFocus={true} placeholder="type a word" onChange={updateQuery} className="form-control"/>
+                </div>
+                <div className="col-3">
+                    <input type="submit" value="go" className="btn btn-dark w-100 go-button"/>
+                </div>
+                </div>               
             </form>
-            <Results results={results}/>
+             <Results results={results}/>
         </div>
     )
 }

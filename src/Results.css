@@ -1,0 +1,10 @@
+.Results h2 {
+    color: rgb(255, 251, 10);
+    text-align: center;
+    margin: 40px auto;
+    font-size: 30px;
+}
+
+.Results h2:first-letter {
+    text-transform: capitalize; 
+}
