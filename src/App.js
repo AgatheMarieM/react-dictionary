@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="App"> 
     <div className="container">
-      <header>Find your words</header> 
+      <header>Find your word</header> 
       <main>
         <Dictionary />
       </main>
