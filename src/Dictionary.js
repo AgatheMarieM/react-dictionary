@@ -8,9 +8,8 @@ export default function Dictionary() {
     let [query, setQuery] = useState("");
     let [results, setResults] = useState("");
 
-    function handleResponse(response) {
-        console.log(response.data[0].meanings[0].definitions[0].definition);
-        setResults(response.data[0]);
+    function handleResponse(response) {        
+    setResults(response.data[0]);
     }
 
     function updateQuery(event) {

@@ -12,8 +12,9 @@ export default function App() {
         <Dictionary />
       </main>
       <footer className="text-center">
-        <a href="/">Open-source </a>
-      code by Agathe M.
+        <a href="https://github.com/AgatheMarieM/react-dictionary" target="_blank" rel="noreferrer">Open-source </a>
+      code by Agathe M. using 
+      <a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer"> Dictionary API </a>
       </footer>
     </div>   
     </div>
