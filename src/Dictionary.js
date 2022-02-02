@@ -29,7 +29,7 @@ export default function Dictionary() {
                     <input type="search" autoFocus={true} placeholder="type a word" onChange={updateQuery} className="form-control"/>
                 </div>
                 <div className="col-3">
-                    <input type="submit" value="go" className="btn btn-dark w-100 go-button"/>
+                    <input type="submit" value="go" className="btn btn-light w-100 go-button"/>
                 </div>
                 </div>               
             </form>
