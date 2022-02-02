@@ -4,6 +4,7 @@ header, footer  {
 
 .App {    
     margin: 60px auto;
+    font-family: 'DM Serif Display', serif;
 }
 .App header {
     margin: 30px auto;
