@@ -52,5 +52,3 @@ if(loaded) {
         return "loading";        
     }   
 }
-
-{/* add loader spinner later? */}
