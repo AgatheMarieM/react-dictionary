@@ -38,10 +38,10 @@ if(loaded) {
             <form onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-9">
-                    <input type="search" autoFocus={true} placeholder="type a word" onChange={updateQuery} className="form-control" defaultValue={props.defaultQuery}/>
+                    <input type="search" autoFocus={true} placeholder="type a word" onChange={updateQuery} defaultValue={props.defaultQuery}/>
                 </div>
                 <div className="col-3">
-                    <input type="submit" value="go" className="btn btn-light w-100 go-button"/>
+                    <input type="submit" value="go" />
                 </div>
                 </div>               
             </form>

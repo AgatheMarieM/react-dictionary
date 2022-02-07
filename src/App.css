@@ -1,27 +1,36 @@
-header, footer  {
-    color: blanchedalmond;
-}
 
-.App {    
-    margin: 60px auto;
+.App main {    
+    border: 1px solid #0963ea38;
+    border-radius: 20px;
     font-family: 'DM Serif Display', serif;
+    margin: 80px auto;
+    max-width: 1000px;
+    padding: 70px 70px;
+    
 }
 
 .App header {
-    margin: 30px auto;
+    color: #0962ea;
+    margin: 40px auto;
     text-align: center;
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .App a {
 text-decoration: none;
-color: rgb(255, 251, 10);
+color: #f8834d;
 }
+
+.App a:hover {
+    text-decoration: none;
+    color: #0962ea;
+    }
 
 .App .container {
     max-width: 750px;
 }
 
 .App footer {
+    color: #0962ea;
     margin: 60px auto;
 }

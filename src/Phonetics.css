@@ -1,0 +1,13 @@
+.Phonetics {
+    font-size: 30px;
+    margin-top: 6px;
+}
+
+.Phonetics .phoneticAudio {
+    color: #0963eab0;
+   
+}
+
+.Phonetics .phoneticText {
+    color: #0963eab0;
+    }

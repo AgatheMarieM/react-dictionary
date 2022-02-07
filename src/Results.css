@@ -1,8 +1,11 @@
+.Results {
+    margin: 30px auto;
+}
+
 .Results h2 {
-    color: rgb(255, 251, 10);
-    text-align: center;
-    margin: 40px auto;
-    font-size: 32px;
+    color: #0962ea;    
+    font-size: 40px;
+    margin-top: 50px;
 }
 
 .Results h2:first-letter {

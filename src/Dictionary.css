@@ -1,3 +1,11 @@
 .Dictionary {
     font-size: 18px;
 }
+
+.Dictionary input {    
+    background: white;
+    border: 1px solid #0962ea;
+    color: #0963eacb;
+    padding: 4px 4px;
+    width: 100%;
+}

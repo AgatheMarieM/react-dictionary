@@ -7,8 +7,8 @@ export default function App() {
   return (
     <div className="App"> 
     <div className="container">
-      <header>Find your word</header> 
       <main>
+      <header>Find your word.</header>       
         <Dictionary defaultQuery="hello"/>
       </main>
       <footer className="text-center">
