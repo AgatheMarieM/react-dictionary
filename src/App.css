@@ -1,11 +1,14 @@
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .App main {    
     border: 1px solid #0963ea38;
     border-radius: 20px;
     font-family: 'DM Serif Display', serif;
     margin: 30px auto;
-    max-width: 1000px;
-    padding: 40px 70px 70px;
+    padding: 40px 70px 20px;
     
 }
 

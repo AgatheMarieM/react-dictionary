@@ -4,6 +4,11 @@
 }
 
 .Phonetics .phoneticAudio {
+    color: #f8834db4;
+   
+}
+
+.Phonetics .phoneticAudio:hover {    
     color: #0963eab0;
    
 }
