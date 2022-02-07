@@ -3,15 +3,15 @@
     border: 1px solid #0963ea38;
     border-radius: 20px;
     font-family: 'DM Serif Display', serif;
-    margin: 80px auto;
+    margin: 30px auto;
     max-width: 1000px;
-    padding: 70px 70px;
+    padding: 40px 70px 70px;
     
 }
 
 .App header {
     color: #0962ea;
-    margin: 20px auto 40px;
+    margin: 15px auto 60px;
     text-align: center;
     font-size: 55px;
 }
