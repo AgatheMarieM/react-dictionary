@@ -4,9 +4,10 @@ import axios from "axios";
 import Results from "./Results";
 
 
-export default function Dictionary() {
-    let [query, setQuery] = useState("");
+export default function Dictionary(props) {
+    let [query, setQuery] = useState(props.defaultQuery);
     let [results, setResults] = useState("");
+    let [loaded, setLoaded] = useState(false);
 
     function handleResponse(response) {        
     setResults(response.data[0]);
@@ -16,14 +17,25 @@ export default function Dictionary() {
       setQuery(event.target.value);      
     }
 
-    function search(event){
-        event.preventDefault();          
+    function search() {
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${query}`
         axios.get(apiUrl).then(handleResponse);
     }
+
+    function handleSubmit(event){
+        event.preventDefault();       
+        search();
+    }
+
+    function load() {
+        setLoaded(true);
+        search();
+    }
+
+if(loaded) { 
     return (
         <div className="Dictionary">                                             
-            <form onSubmit={search}>
+            <form onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-9">
                     <input type="search" autoFocus={true} placeholder="type a word" onChange={updateQuery} className="form-control"/>
@@ -35,5 +47,10 @@ export default function Dictionary() {
             </form>
              <Results results={results}/>
         </div>
-    )
+    )} else {
+        load();
+        return "loading";        
+    }   
 }
+
+{/* add loader spinner later? */}
