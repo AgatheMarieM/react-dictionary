@@ -8,27 +8,25 @@
    margin: 12px auto;    
 }
 
-.Meanings .definitions {
-    margin-top: 5px;
-}
 
 .Meanings .definitionTitle {
     color: #0962ea;
     font-size: 20px;
-    margin-left: 15px;  
+    margin-left: 15px;
  }
 
  .Meanings .definitionText {
     color: #0e2649d3;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;  
-    margin-left: 10px;
+    margin-left: 15px;
  }         
  
  .Meanings .examplesText {
     color: #0e254962;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;     
-    margin-left: 10px;    
+    font-size: 20px; 
+    margin-left: 15px;    
+       
 }
 

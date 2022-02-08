@@ -1,13 +1,23 @@
+.Synonyms {
+    margin-top: 10px;
+}
+
 .Synonyms .synonymsTitle {
     color: #0962ea;
     font-size: 20px; 
-    margin-left: 15px;  
+    margin-left: 15px;
+      
 }
 
 .Synonyms li {
-    display: inline-block;
-    margin-left: 13px;
-    color: #0e264994;
+    display: inline-block;    
+    color: #0e254962;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px; 
+    margin-left: 10px;    
+}
+
+.Synonyms ul {
+    margin: 0px 0px 0px 5px;
+    padding: 0 0;
 }
