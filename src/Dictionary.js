@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
+import BeatLoader from "react-spinners/ClipLoader";
+
 
 
 export default function Dictionary(props) {
@@ -45,10 +47,13 @@ if(loaded) {
                 </div>
                 </div>               
             </form>
-             <Results results={results}/>
+             <Results results={results}/>  
         </div>
     )} else {
         load();
-        return "loading";        
+        return (<div className="loader">
+           Fetching...
+        <BeatLoader color="#0962ea" loading={true} css="" size={30} /> 
+        </div>);      
     }   
 }
