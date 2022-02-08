@@ -9,7 +9,7 @@ export default function App() {
     <div className="container">
       <main>
       <header>Find your word.</header>       
-        <Dictionary defaultQuery="hello"/>
+        <Dictionary defaultQuery="welcome"/>
       </main>
       <footer className="text-center">
         <a href="https://github.com/AgatheMarieM/react-dictionary" target="_blank" rel="noreferrer">Open-source </a>
