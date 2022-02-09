@@ -3,6 +3,7 @@ import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 import BeatLoader from "react-spinners/ClipLoader";
+import Photos from "./Photos.js";
 
 
 
@@ -10,13 +11,14 @@ export default function Dictionary(props) {
     let [query, setQuery] = useState(props.defaultQuery);
     let [results, setResults] = useState("");
     let [loaded, setLoaded] = useState(false);
+    let [photos, setPhotos] = useState("");
 
     function handleResponse(response) {        
-    setResults(response.data[0]);
+        setResults(response.data[0]);
     }
 
-    function handlePexelsResponse(response) {
-        console.log(response.data);
+    function handlePexelsResponse(response) {             
+        setPhotos(response.data.photos);
     }
 
     function updateQuery(event) {
@@ -56,7 +58,8 @@ if(loaded) {
                 </div>
                 </div>               
             </form>
-             <Results results={results}/>  
+             <Results results={results} />  
+             <Photos photos={photos} />
         </div>
     )} else {
         load();
